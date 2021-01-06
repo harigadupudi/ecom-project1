@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+.comp{
+    /* border: 1px solid black; */
+    width: 250px;
+    line-height: 4px;
+}
+/* .img{
+    
+} */
+/* .Main{
+    border: 1px solid black;
+} */
+.head{
+    /* border:1px solid black; */
+    padding: 10px;
+    position: relative;
+    height: 60px;
+    top: 10px;
+    
+}
+
+.quant{
+    max-width:50px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    
+}
+.ind{
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+}
+.ac{
+    background-color: #3f51b5;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+/* .toast{
+    background-color: /* #616161  red;
+    color: white;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed; 
+    /* transform: translate(550px,-2100px); 
+    bottom: 10px !important;
+    right:500px !important;
+} */
+.toasts{
+    background-color: #616161;
+    padding: 10px;
+    position: fixed;
+    transform: translate(550px,520px);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.posts{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+    width: 50px;
+    margin: 10px 120px 10px 120px;
+}
+.cart{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    display: inline;
+    font-size: 25px;
+    cursor: pointer;
+}
+.headname{
+    position: absolute;
+    display: inline;
+    top: 1px;
+    left: 80px;
+    bottom: 10px;
+    color: #0c6ab8;
+    font-weight: 600;
+    font-size: 30px;
+}
+.cartValue{
+    border: 1px solid black;
+    position: absolute;
+    right: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color:#42a5f5;
+    color: white;
+}
+.final{
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5px;
+}
+.final>div{
+    border: 1px solid black;
+}
+.final>div>p{
+    padding: 10px;
+    color: black;
+}
+.final>div>input{
+    width: 40px;
+    margin: 20px;
+    padding: 5px;
+    color: black;
+
+}
+.ftotal{
+    color: black;
+    font-size: 25px;
+}
+.confirm{
+    font-size: 30px;
+    color: black;
+}
+.fcart{
+    background-color: #afc4da9a;
+    position: fixed;
+    border: 1px solid black;
+    top: 0;
+    filter: opacity(2px);
+    width: 100%;
+    height: 100%;
+}
+.fcitem{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 65%;
+    top: 130px;
+    left: 300px;
+    background-color: white;
+    overflow: scroll;
+}
+.close{
+    position: fixed;
+    /* right: 0px;
+    top: 2px; */
+    transform: translate(300px,10px);
+    padding: 5px;
+}
+.fitems{
+    margin: 10px;
+    height: 75%;
+    padding: 20px;
+}
+.fitems1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    height: 130px;
+
+}
+.f1{
+    position: absolute;
+    left: 2px;
+}
+.f2{
+    position: absolute;
+    left: 25%;
+    top: 45px;
+}
+.f3{
+    position: absolute;
+    left: 40%;
+    top: 45px;
+}
+.f5{
+    width: 35px;
+}
+.f4{
+    position: absolute;
+    left: 62%;
+    top: 45px;
+}
+.fs{
+    position: absolute;
+    left: 75%;
+    top: 30px;
+}
+.f6{
+    position: absolute;
+    left: 90%;
+    top: 45px;
+    cursor: pointer;
+}
+.total{
+    float: left;
+    font-size: larger;
+    font-weight: 500;
+}
+.buy{
+    padding: 3px;
+    /* position: absolute;
+    right: 35px;
+    bottom: 50px; */
+    float: right;
+    
+    font-size: larger;
+    background-color: #afc4da9a;
+    outline: none;
+    border-radius: 12px;
+    width: 135px;
+}
