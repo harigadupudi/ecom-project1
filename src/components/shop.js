@@ -30,16 +30,16 @@ class shop extends Component {
         return (
             <div className = "fcart" /* onClick = {this.props.hide} */>
                 {/* <Link to ="/main" >Buy now</Link> */}
-                <div className = 'fcitem'  >
-                    <button onClick = {this.props.hide} className ='close'>x</button>
-                    <div className = 'fitems' >
+                <div className = 'container w3-sand '  >
+                    <div className = 'w3-row ' >
                         {
                             fcart.map(x => <Mini key = {x[1]} name = {x[1]} image = {x[3]} price = {x[2]} 
                             quant = {x[0]} value ={x[2]*x[0]} check = {this.c1} x2 = {x2} id ={x[4]}
                             d1 = {this.state.d1} ></Mini> )
                         }
-                        <p className ='total' >Total - {this.state.x1}</p>
-                        <button className = 'buy' >Buy items</button>
+                        <p className ='w3-btn w3-kakhi w3-left w3-xlarge' >Total - {this.state.x1}</p>
+                        <button onClick = {this.props.hide} className ='w3-btn w3-round w3-blue w3-large' >back</button>
+                        <button className = 'w3-btn w3-round w3-blue w3-right w3-large' >Buy items</button>
                     </div>
                 </div>
             </div>

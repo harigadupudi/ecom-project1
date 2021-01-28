@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import Shop from "./shop"
 
-class test extends Component {
+class Test1 extends Component {
 
     constructor(props) {
         super(props)
@@ -140,17 +140,19 @@ class test extends Component {
     render() {
         const {post} = this.state
         return (
-            <div className ="Main" >
-                <div className ="head" >
-                    <h2 className ="headname" >ProMarket </h2>
-                    <span className = "cart" onClick = {(e)=>this.show(e)} ><FontAwesomeIcon icon={faShoppingCart} /></span>
-                    <span className = "cartValue"  >{this.state.cart.length}</span>  
+            <div className ="contianer w3-padding-36 w3-mobile " >
+                <div className ="w3-bar w3-sand" >
+                    <h2 className ="w3-bar-item w3-text-blue" >ProMarket </h2>
+                    <span className = " cart" onClick = {(e)=>this.show(e)} ><FontAwesomeIcon icon={faShoppingCart} /></span>
+                    <span className = "cartValue"  >{this.state.cart.length}</span> 
+                    {/* <span className = "w3-bar-item w3-right w3" onClick = {(e)=>this.show(e)} ><FontAwesomeIcon icon={faShoppingCart} /></span>
+                    <span className = "w3-bar-item w3-right"  >{this.state.cart.length}</span> */}  
                       
                 </div>
                 {/* {
                     post.map(x=><p key ={x.id} >{x.image}</p> )
                 } */}
-                <div className = "posts">
+                <div className = "w3-row">
                     {
                         post.map(x=> <Comp submit = {(e)=>this.sub(e)}
                         key ={x.id} id ={x.id} name ={x.name} img ={x.image} price = {x.price} ></Comp> )
@@ -162,4 +164,4 @@ class test extends Component {
     }
 }
 
-export default test
+export default Test1

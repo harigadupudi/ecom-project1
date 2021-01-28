@@ -1,18 +1,14 @@
 import './App.css';
-import Test from "./components/test"
+
 /* import Check from "./components/Check" */
 import Shop from "./components/shop"
+import Test1 from './components/Test1';
 
 function App() {
   return (
     <div className="App">
-      <Test></Test>
-      {/* <Check></Check> */}
-      {/* <Router>
-        <Route path ="/cart" >
-          <Shop></Shop>
-        </Route>
-      </Router> */}
+      <Test1></Test1>
+      
     </div>
   );
 }

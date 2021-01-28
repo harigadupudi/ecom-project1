@@ -92,7 +92,7 @@ class minicomp extends Component {
         const {name,image,price,check} = this.props
         return (c?
             <div className = 'fitems1' onLoad ={(e)=>this.change(e)} value ={price*quant*x2} >
-                <div className = 'f1'><img src = {image} width = '120px' alt = 'logo' value ={price*quant*x2} ></img> </div>
+                <div className = 'f1'><img src = {image} width = '90px' alt = 'logo' value ={price*quant*x2} ></img> </div>
                 <div className = 'f2'>{name}</div>
                 <div className = 'f3'><button onClick = {(e) => this.dec(e)}  >-</button><input className ='f5' type ='text'
                  onLoad = {(e)=>this.change(e)} value ={quant} readOnly></input><button onClick = {(e)=>this.inc(e)} >+</button></div>

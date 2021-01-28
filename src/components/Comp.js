@@ -53,7 +53,7 @@ class Comp extends Component {
         const {quant} = this.state
         const {name,img,price,id} = this.props
         return (
-            <div className = "comp">
+            <div className = "w3-col s5 m2 w3-margin-left" >
                 <img src ={img} alt ="veg"
                 width = "160" height ="150" className = "img"></img>
                 <p>{name}</p>
